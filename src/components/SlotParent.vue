@@ -61,12 +61,23 @@
       제출
     </button>
   </form>
+
+ 
+  <DynamicChild slotName="title">
+    <template #title>
+      <h1>동적 타이틀동적 타이틀</h1>
+    </template>
+    <template #sub>
+      <p>서브 내용서브 내용</p>
+    </template>
+  </DynamicChild>
 </template>
 
 
 <script setup lang="ts">
 import SlotChild from './SlotChild.vue'
 import FormSlot from './FormSlot.vue'
+import DynamicChild from './DynamicChild.vue'
 
 import type { Column, Row } from './table'
 import {ref, reactive} from 'vue'

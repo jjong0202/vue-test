@@ -5,6 +5,7 @@ import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 import SlotParent from './SlotParent.vue'
 import Vmodel from './Vmodel.vue'
+import EmitParent from './EmitParent.vue'
 
 const count = ref(10)
 </script>
@@ -30,6 +31,7 @@ const count = ref(10)
   <section id="spacer"></section>
    -->
   <SlotParent/>
-  <h2>vmodel</h2>
+  <h1>vmodel</h1>
   <Vmodel></Vmodel>
+  <EmitParent></EmitParent>
 </template>

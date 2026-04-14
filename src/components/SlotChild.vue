@@ -48,6 +48,7 @@
     <slot name="content2"></slot>
     <slot name="footer2"></slot>
   </div>
+
 </template>
 
 
