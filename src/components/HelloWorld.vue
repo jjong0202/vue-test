@@ -4,11 +4,13 @@ import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 import SlotParent from './SlotParent.vue'
+import Vmodel from './Vmodel.vue'
 
 const count = ref(10)
 </script>
 
 <template>
+<!--   
   <section id="center">
     <div class="hero">
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
@@ -24,8 +26,10 @@ const count = ref(10)
 
   <div class="ticks"></div>
 
-  <div class="ticks">
-    <SlotParent/>
-  </div>
+  <div class="ticks"></div>
   <section id="spacer"></section>
+   -->
+  <SlotParent/>
+  <h2>vmodel</h2>
+  <Vmodel></Vmodel>
 </template>
