@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
+import SlotParent from './SlotParent.vue'
 
 const count = ref(10)
 </script>
@@ -23,6 +24,8 @@ const count = ref(10)
 
   <div class="ticks"></div>
 
-  <div class="ticks"></div>
+  <div class="ticks">
+    <SlotParent/>
+  </div>
   <section id="spacer"></section>
 </template>
