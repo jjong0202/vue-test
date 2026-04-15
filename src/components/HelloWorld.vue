@@ -6,6 +6,7 @@ import vueLogo from '../assets/vue.svg'
 import SlotParent from './SlotParent.vue'
 import Vmodel from './Vmodel.vue'
 import EmitParent from './EmitParent.vue'
+import Parent from '../slot/Parent.vue'
 
 const count = ref(10)
 </script>
@@ -34,4 +35,5 @@ const count = ref(10)
   <h1>vmodel</h1>
   <Vmodel></Vmodel>
   <EmitParent></EmitParent>
+  <Parent/>
 </template>

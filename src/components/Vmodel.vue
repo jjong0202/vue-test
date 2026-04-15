@@ -45,17 +45,24 @@
     </select>
 
     <p>선택된 도시: {{ selectedCities }}</p>
-  </div>    
+  </div>  
+
+  <div>
+    <CheckboxGroup v-model="items" />
+    <p>부모가 받은 값: {{ items }}</p>
+  </div>
 </template>
 
 <script setup lang="ts">
 import VmodelChild from './VmodelChild.vue'
 import FormField from './FormField.vue'
+import CheckboxGroup from './CheckboxGroup.vue'
 import {ref, watch, computed} from 'vue'
 
 const username = ref('')
 const minValue = ref(0)
 const maxValue = ref(100)
+const items = ref<string[]>([])
 
 const selectedFruits = ref<string[]>([])
 const selectedCities = ref<string[]>([])
